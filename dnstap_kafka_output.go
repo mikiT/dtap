@@ -17,29 +17,21 @@
 package dtap
 
 import (
+	_ "embed"
 	"encoding/binary"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 
 	"github.com/dangkaka/go-kafka-avro"
 	"github.com/linkedin/goavro"
-	"github.com/rakyll/statik/fs"
 
 	"github.com/Shopify/sarama"
 	dnstap "github.com/dnstap/golang-dnstap"
 	"github.com/golang/protobuf/proto"
-	_ "github.com/mimuret/dtap/statik"
 )
 
+//go:embed assets/flat.avsc
 var schemaStr string
-
-func init() {
-	statikFS, _ := fs.New()
-	f, _ := statikFS.Open("/flat.avsc")
-	b, _ := ioutil.ReadAll(f)
-	schemaStr = string(b)
-}
 
 type KafkaClient interface {
 	Add(string, string, []byte, []byte) error

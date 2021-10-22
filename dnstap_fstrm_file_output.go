@@ -84,7 +84,6 @@ func (o *DnstapFstrmFileOutput) open() error {
 
 func (o *DnstapFstrmFileOutput) write(frame []byte) error {
 	if _, err := o.enc.Write(frame); err != nil {
-		o.close()
 		return err
 	}
 	return nil

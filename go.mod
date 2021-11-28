@@ -18,7 +18,7 @@ require (
 	github.com/jehiah/go-strftime v0.0.0-20171201141054-1d33003b3869
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/linkedin/goavro v2.1.0+incompatible
-	github.com/miekg/dns v1.1.38
+	github.com/miekg/dns v1.1.43
 	github.com/nats-io/gnatsd v1.4.1 // indirect
 	github.com/nats-io/go-nats v1.7.2
 	github.com/nats-io/nkeys v0.0.2 // indirect
@@ -33,7 +33,7 @@ require (
 	github.com/spf13/viper v1.3.2
 	github.com/stretchr/testify v1.3.0
 	github.com/tinylib/msgp v1.1.0 // indirect
-	github.com/ulikunitz/xz v0.5.8
+	github.com/ulikunitz/xz v0.5.10
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6 // indirect
 	gopkg.in/linkedin/goavro.v1 v1.0.5 // indirect
 )

@@ -4,7 +4,7 @@ Supported multi input and multi output.
 
 ## Install
 ```
-go get -u github.com/mimuret/dtap/dtap
+go get -u github.com/mimuret/dtap
 ```
 
 ## example

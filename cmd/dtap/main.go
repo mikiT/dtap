@@ -26,7 +26,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/mimuret/dtap"
+	"github.com/mikiT/dtap"
 	log "github.com/sirupsen/logrus"
 )
 
